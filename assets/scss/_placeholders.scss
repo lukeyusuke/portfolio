@@ -1,0 +1,32 @@
+@use 'sass:color';
+@use 'variables';
+
+%flex-model{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%btn-style{
+    background-color: variables.$light-purple-hover;
+    border: none;
+    border-radius: 1rem 0 1rem 0;
+    color: variables.$light-purple;
+    position: relative;
+
+    &::before{
+        content: '';
+        border-radius: 1rem 0 1rem 0;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        transition: .3s;
+        width: 0;
+    }
+
+    &:hover::before{
+        background-color: variables.$light-purple-hover;
+        width: 100%;
+    }
+}

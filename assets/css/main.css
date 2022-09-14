@@ -1,0 +1,94 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  padding: 0 150px;
+}
+
+ul {
+  list-style: none;
+}
+
+a, path, rect {
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+a, button {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header-content, .header-content ul, .header-content .links-item, .header-content .icons-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content ul .btn-style {
+  background-color: rgba(158, 64, 235, 0.1019607843);
+  border: none;
+  border-radius: 1rem 0 1rem 0;
+  color: #9F40EB;
+  position: relative;
+}
+.header-content ul .btn-style::before {
+  content: "";
+  border-radius: 1rem 0 1rem 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+}
+.header-content ul .btn-style:hover::before {
+  background-color: rgba(158, 64, 235, 0.1019607843);
+  width: 100%;
+}
+
+.header-content {
+  padding: 0.75rem 0 1rem 0;
+}
+.header-content ul .links-item li {
+  margin: 0.75rem;
+}
+.header-content ul .links-item a:hover {
+  color: #9F40EB;
+}
+.header-content ul .icons-item {
+  margin: 0 2.5rem;
+}
+.header-content ul .icons-item .icon-link {
+  margin: 0 0.5rem;
+  height: 20px;
+}
+.header-content ul .icons-item .icon-link svg:hover path[stroke], .header-content ul .icons-item .icon-link svg:hover rect[stroke] {
+  stroke: #9F40EB;
+}
+.header-content ul .btn-style {
+  height: 40px;
+  width: 110px;
+}
+
+.line {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  height: 0.1vh;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
