@@ -13,7 +13,10 @@ html{
 
 body{
     background-color: variables.$bg-color;
-    padding: 0 150px;
+}
+
+p{
+    color: variables.$text-color;
 }
 
 ul{
@@ -28,9 +31,10 @@ a, path, rect{
 a, button{
     color: variables.$text-color;
     text-decoration: none;
-    font-weight: 700;
 }
 
 button{
     cursor: pointer;
+    border: none;
+    outline: 0;
 }

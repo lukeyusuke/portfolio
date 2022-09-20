@@ -1,0 +1,15 @@
+@use '../1-base/variables';
+@use 'module-placeholders';
+@use '../2-layouts/layouts-placeholders';
+
+.btn{
+    @extend %btn-style;
+}
+
+.span-title{
+    @extend %section-title;
+}
+
+.section-subtitle{
+    @extend %section-subtitle
+}

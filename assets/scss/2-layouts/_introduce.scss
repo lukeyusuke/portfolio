@@ -1,0 +1,54 @@
+@use '../1-base/variables';
+@use '../3-module/module-placeholders';
+@use '../2-layouts/layouts-placeholders';
+
+.introduce{
+    &-container{
+        color: variables.$text-color;
+        @extend %flex-model;
+        align-items: flex-start;
+        padding: 6rem variables.$section-padding 0 variables.$section-padding;  
+
+        &-content{
+            margin-top: 8rem;
+
+            &-message{
+                @extend %btn-style;
+                font-weight: 700;
+                text-align: center;
+                font-size: 14px;
+                padding: .35rem 0;
+                width: 170px;
+            }
+
+            &-name, &-job{
+                margin-top: .5rem;
+            }
+
+            &-name{
+                font-size: 4rem;
+            }
+
+            &-job{
+                color: variables.$text-color;
+                margin-bottom: variables.$section-title-size;
+            }
+
+            b{
+                color: variables.$light-purple;
+            }
+
+            &-text{
+                width:  450px;
+                margin-bottom: 8rem;
+            }
+        }
+
+        &-img{
+            img{
+                @extend %img-style;
+                border-radius: .5rem .5rem 0 0;
+            }
+        }
+    }
+}

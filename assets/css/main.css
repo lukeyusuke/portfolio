@@ -11,7 +11,10 @@ html {
 
 body {
   background-color: #121212;
-  padding: 0 150px;
+}
+
+p {
+  color: #FFF;
 }
 
 ul {
@@ -26,27 +29,47 @@ a, path, rect {
 a, button {
   color: #FFF;
   text-decoration: none;
-  font-weight: 700;
 }
 
 button {
   cursor: pointer;
+  border: none;
+  outline: 0;
 }
 
-.header-content, .header-content ul, .header-content .links-item, .header-content .icons-item, .introduce-container {
+.about-me-container-img img, .introduce-container-img img {
+  min-width: 300px;
+  width: 100%;
+}
+
+.span-title {
+  color: #9F40EB;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 2.3rem;
+  color: #FFF;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+
+.about-me-container, .introduce-container, .header-content, .header-content ul, .header-content .links-item, .header-content .icons-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.header-content ul .btn, .introduce-container-content-message {
+.btn, .introduce-container-content-message {
   background-color: rgba(158, 64, 235, 0.1019607843);
-  border: none;
   border-radius: 1rem 0 1rem 0;
+  font-weight: 700;
   color: #9F40EB;
   position: relative;
 }
-.header-content ul .btn::before, .introduce-container-content-message::before {
+.btn::before, .introduce-container-content-message::before {
   content: "";
   border-radius: 1rem 0 1rem 0;
   height: 100%;
@@ -56,13 +79,13 @@ button {
   transition: 0.3s;
   width: 0;
 }
-.header-content ul .btn:hover::before, .introduce-container-content-message:hover::before {
+.btn:hover::before, .introduce-container-content-message:hover::before {
   background-color: rgba(158, 64, 235, 0.1019607843);
   width: 100%;
 }
 
 .header-content {
-  padding: 0.75rem 0 1rem 0;
+  padding: 0.75rem 150px 1rem 150px;
 }
 .header-content ul .links-item li {
   margin: 0.75rem;
@@ -71,7 +94,7 @@ button {
   color: #9F40EB;
 }
 .header-content ul .icons-item {
-  margin: 0 2.5rem;
+  margin: 0 2.3rem;
 }
 .header-content ul .icons-item .icon-link {
   margin: 0 0.5rem;
@@ -80,21 +103,22 @@ button {
 .header-content ul .icons-item .icon-link svg:hover path[stroke], .header-content ul .icons-item .icon-link svg:hover rect[stroke] {
   stroke: #9F40EB;
 }
-.header-content ul .btn {
+.header-content .btn-contact {
   height: 40px;
   width: 110px;
 }
 
-.line {
+.big-line {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-  height: 0.1vh;
+  margin-top: 1rem;
+  height: 1px;
   width: 100%;
 }
 
 .introduce-container {
-  padding-top: 6rem;
   color: #FFF;
   align-items: flex-start;
+  padding: 6rem 150px 0 150px;
 }
 .introduce-container-content {
   margin-top: 8rem;
@@ -125,6 +149,59 @@ button {
 }
 .introduce-container-img img {
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.about-me-container {
+  padding: 150px;
+  align-items: flex-start;
+}
+.about-me-container-img img {
+  border-radius: 0.5rem 0;
+}
+.about-me-container-content {
+  min-width: 400px;
+  margin-top: 2.5rem;
+  width: 50%;
+}
+.about-me-container-content .small-line {
+  background-color: #9F40EB;
+  height: 1px;
+  width: 25px;
+}
+.about-me-container-content .tabs {
+  margin: 1.5rem 0 3rem 0;
+}
+.about-me-container-content .tabs-btn {
+  border-radius: 0.5rem 0 0.5rem 0;
+  margin-right: 0.2rem;
+  height: 30px;
+  width: 125px;
+}
+.about-me-container-content .tabs-btn:nth-child(2), .about-me-container-content .tabs-btn:nth-child(3) {
+  background-color: #2A2A2A;
+}
+.about-me-container-content .tab-content-title {
+  font-size: 1.15rem;
+  color: #9F40EB;
+}
+.about-me-container-content .tab-content-text {
+  margin: 1.5rem 0 4.5rem 0;
+}
+.about-me-container-content .tab-content + .tab-content {
+  display: none;
+}
+.about-me-container-content .btn-cv {
+  border: 1px solid #9F40EB;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 40px;
+  width: 145px;
+}
+.about-me-container-content .btn-cv a {
+  color: #9F40EB;
 }
 
 /*# sourceMappingURL=main.css.map */
