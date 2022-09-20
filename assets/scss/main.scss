@@ -1,2 +1,4 @@
-@use 'components/global';
-@use 'components/styles';
+@use '0-plugins/plugins.scss';
+@use '1-base/base.scss';
+@use '2-layouts/layouts.scss';
+@use '3-module/modules.scss';

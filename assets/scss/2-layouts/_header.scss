@@ -1,5 +1,5 @@
-@use 'variables';
-@use 'placeholders';
+@use '../1-base/variables';
+@use 'layout-placeholders';
 
 .header-content{
     padding: .75rem 0 1rem 0;

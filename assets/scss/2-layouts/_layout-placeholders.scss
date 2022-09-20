@@ -1,5 +1,4 @@
-@use 'sass:color';
-@use 'variables';
+@use '../1-base/variables';
 
 %flex-model{
     display: flex;
