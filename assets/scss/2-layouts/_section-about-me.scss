@@ -1,5 +1,4 @@
 @use '../1-base/variables';
-@use '../3-module/module-placeholders';
 @use '../2-layouts/layouts-placeholders';
 
 .about-me{
@@ -20,12 +19,6 @@
             margin-top: 2.5rem;
             width: 50%;
 
-            .small-line{
-                background-color: variables.$light-purple;
-                height: 1px;
-                width: 25px;
-            }
-
             .tabs{
                 margin: 1.5rem 0 3rem 0;
 
@@ -38,6 +31,7 @@
 
                 &-btn:nth-child(2),
                 &-btn:nth-child(3){
+                    font-weight: variables.$bold-font;
                     background-color: variables.$dark-gray;
                 }
             }

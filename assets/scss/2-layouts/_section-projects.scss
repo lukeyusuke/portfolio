@@ -1,0 +1,58 @@
+@use '../1-base/variables';
+@use 'layouts-placeholders';
+
+.projects-container{
+    background: variables.$light-purple-hover;
+    padding: 125px variables.$section-padding;
+
+    .section-introduce{
+        text-align: center;
+
+        .small-line{
+            margin: 0 auto;
+        }
+    }
+
+    &-content{
+        @extend %flex-model;
+
+        &-box{
+            background-color: variables.$dark-gray;
+            border-radius: .5rem 0;
+            margin: 4rem 0 2rem 0;
+            height: 400px;
+            width: 330px;
+
+            img{
+                border-top-left-radius: .5rem;
+                width: 100%;
+            }
+        }
+
+        .project-content{
+            padding-left: 20px;
+
+            &-tag{
+                color: variables.$light-purple;
+                margin: 1rem 0 .25rem 0;
+                font-size: 0.75rem;
+                font-weight: 700;
+            }
+
+            &-name{
+                color: variables.$text-color;
+            }
+
+            &-paragraph{
+                color: variables.$text-project-color;
+                margin-top: 10px;
+                width: 300px;
+            }
+        }
+
+    }
+
+    .projects-container-carrosel{
+        @extend %flex-model;
+    }
+}

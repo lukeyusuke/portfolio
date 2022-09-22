@@ -1,0 +1,14 @@
+@use '../1-base/variables';
+
+.section-title{
+    color: variables.$light-purple;
+    font-size: variables.$section-title-size;
+    font-weight: 700;
+}
+
+.section-subtitle{
+    font-size: variables.$section-subtitle-size;
+    color: variables.$text-color;
+    font-weight: 400;
+    margin: .5rem 0;
+}

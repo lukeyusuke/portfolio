@@ -5,15 +5,9 @@
     width: 100%;
 }
 
-%section-title{
-    color: variables.$light-purple;
-    font-size: variables.$section-title-size;
-    font-weight: 700;
-}
-
-%section-subtitle{
-    font-size: variables.$section-subtitle-size;
-    color: variables.$text-color;
-    font-weight: 400;
-    margin: .5rem 0;
+%flex-model{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

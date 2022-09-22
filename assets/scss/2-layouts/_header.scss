@@ -1,5 +1,5 @@
 @use '../1-base/variables';
-@use '../3-module/module-placeholders';
+@use '../2-layouts/layouts-placeholders';
 
 .header-content{
     padding: .75rem variables.$section-padding 1rem variables.$section-padding;
@@ -16,6 +16,7 @@
             }
     
             a{
+                font-weight: variables.$bold-font;
                 &:hover{
                     color: variables.$light-purple;
                 }
@@ -41,11 +42,3 @@
         width: 110px;
     }
 }
- 
-.big-line{
-    background: linear-gradient(90deg, rgb(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-    margin-top: 1rem;
-    height: 1px;
-    width: 100%;
-}
-

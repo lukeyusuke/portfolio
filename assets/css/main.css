@@ -37,51 +37,20 @@ button {
   outline: 0;
 }
 
+span {
+  display: block;
+}
+
 .about-me-container-img img, .introduce-container-img img {
   min-width: 300px;
   width: 100%;
 }
 
-.span-title {
-  color: #9F40EB;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.section-subtitle {
-  font-size: 2.3rem;
-  color: #FFF;
-  font-weight: 400;
-  margin: 0.5rem 0;
-}
-
-.about-me-container, .introduce-container, .header-content, .header-content ul, .header-content .links-item, .header-content .icons-item {
+.projects-container-content, .projects-container .projects-container-carrosel, .about-me-container, .introduce-container, .header-content, .header-content ul, .header-content .links-item, .header-content .icons-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.btn, .introduce-container-content-message {
-  background-color: rgba(158, 64, 235, 0.1019607843);
-  border-radius: 1rem 0 1rem 0;
-  font-weight: 700;
-  color: #9F40EB;
-  position: relative;
-}
-.btn::before, .introduce-container-content-message::before {
-  content: "";
-  border-radius: 1rem 0 1rem 0;
-  height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  transition: 0.3s;
-  width: 0;
-}
-.btn:hover::before, .introduce-container-content-message:hover::before {
-  background-color: rgba(158, 64, 235, 0.1019607843);
-  width: 100%;
 }
 
 .header-content {
@@ -89,6 +58,9 @@ button {
 }
 .header-content ul .links-item li {
   margin: 0.75rem;
+}
+.header-content ul .links-item a {
+  font-weight: 700;
 }
 .header-content ul .links-item a:hover {
   color: #9F40EB;
@@ -108,13 +80,6 @@ button {
   width: 110px;
 }
 
-.big-line {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-  margin-top: 1rem;
-  height: 1px;
-  width: 100%;
-}
-
 .introduce-container {
   color: #FFF;
   align-items: flex-start;
@@ -124,7 +89,6 @@ button {
   margin-top: 8rem;
 }
 .introduce-container-content-message {
-  font-weight: 700;
   text-align: center;
   font-size: 14px;
   padding: 0.35rem 0;
@@ -163,11 +127,6 @@ button {
   margin-top: 2.5rem;
   width: 50%;
 }
-.about-me-container-content .small-line {
-  background-color: #9F40EB;
-  height: 1px;
-  width: 25px;
-}
 .about-me-container-content .tabs {
   margin: 1.5rem 0 3rem 0;
 }
@@ -178,6 +137,7 @@ button {
   width: 125px;
 }
 .about-me-container-content .tabs-btn:nth-child(2), .about-me-container-content .tabs-btn:nth-child(3) {
+  font-weight: 700;
   background-color: #2A2A2A;
 }
 .about-me-container-content .tab-content-title {
@@ -202,6 +162,92 @@ button {
 }
 .about-me-container-content .btn-cv a {
   color: #9F40EB;
+}
+
+.projects-container {
+  background: rgba(158, 64, 235, 0.1019607843);
+  padding: 125px 150px;
+}
+.projects-container .section-introduce {
+  text-align: center;
+}
+.projects-container .section-introduce .small-line {
+  margin: 0 auto;
+}
+.projects-container-content-box {
+  background-color: #2A2A2A;
+  border-radius: 0.5rem 0;
+  margin: 4rem 0 2rem 0;
+  height: 400px;
+  width: 330px;
+}
+.projects-container-content-box img {
+  border-top-left-radius: 0.5rem;
+  width: 100%;
+}
+.projects-container-content .project-content {
+  padding-left: 20px;
+}
+.projects-container-content .project-content-tag {
+  color: #9F40EB;
+  margin: 1rem 0 0.25rem 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.projects-container-content .project-content-name {
+  color: #FFF;
+}
+.projects-container-content .project-content-paragraph {
+  color: #B8B8B8;
+  margin-top: 10px;
+  width: 300px;
+}
+.btn {
+  background-color: rgba(158, 64, 235, 0.1019607843);
+  border-radius: 1rem 0 1rem 0;
+  font-weight: 700;
+  color: #9F40EB;
+  position: relative;
+}
+.btn::before {
+  content: "";
+  border-radius: 1rem 0 1rem 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+}
+.btn:hover::before {
+  background-color: rgba(158, 64, 235, 0.1019607843);
+  width: 100%;
+}
+
+.section-title {
+  color: #9F40EB;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 2.3rem;
+  color: #FFF;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+
+.big-line {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  margin-top: 1rem;
+  height: 1px;
+  width: 100%;
+}
+
+.small-line {
+  background-color: #9F40EB;
+  height: 1px;
+  width: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */

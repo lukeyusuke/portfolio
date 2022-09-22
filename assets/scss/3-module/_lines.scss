@@ -1,0 +1,14 @@
+@use '../1-base/variables';
+
+.big-line{
+    background: linear-gradient(90deg, rgb(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    margin-top: 1rem;
+    height: 1px;
+    width: 100%;
+}
+
+.small-line{
+    background-color: variables.$light-purple;
+    height: 1px;
+    width: 25px;
+}

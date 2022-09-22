@@ -1,16 +1,10 @@
 @use '../1-base/variables';
+@use '../2-layouts/layouts-placeholders';
 
-%flex-model{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-%btn-style{
+.btn{
     background-color: variables.$light-purple-hover;
     border-radius: 1rem 0 1rem 0;
-    font-weight: 700;
+    font-weight: variables.$bold-font;
     color: variables.$light-purple;
     position: relative;
 

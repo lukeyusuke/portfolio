@@ -62,7 +62,7 @@
             <section id="introduce">
                 <div class="introduce-container">
                     <div class="introduce-container-content">
-                        <p class="introduce-container-content-message">BEM VINDO, EU SOU</p>
+                        <p class="introduce-container-content-message btn">BEM VINDO, EU SOU</p>
                         <h1 class="introduce-container-content-name">Luke Yusuke</h1>
                         <p class="introduce-container-content-job">Desenvolvedor <b>Web Front-End</b></p>
                         <p class="introduce-container-content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam facilis molestiae esse adipisci nesciunt? Sequi atque minus, excepturi facere voluptatum velit illum dolor. Ab aspernatur at quos, sunt magni repellat.</p>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="about-me-container-content">
                         <div class="section-introduce">
-                            <span class="span-title">Sobre mim</span>
+                            <span class="section-title">Sobre mim</span>
                             <h2 class="section-subtitle">Me conheça um pouco melhor</h2>
                             <div class="small-line"></div>
                         </div>
@@ -129,30 +129,36 @@
                     <div class="section-introduce">
                         <span class="section-title">Projetos</span>
                         <h2 class="section-subtitle">Alguns de meus projetos</h2>
-                        <div> <!-- Linha aqui--></div>
+                        <div class="small-line"></div>
                     </div>
                     <div class="projects-container-content">
                         <div class="projects-container-content-box">
                             <img src="./assets/images/project1.jpg" alt="Projeto (NOME PROJETO)">
-                            <span>TAG DO PROJETO</span>
-                            <h3>Nome do projeto</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam rem aspernatur quos iste odit unde nostrum deleniti, consequatur aperiam impedit non at dolores velit sunt debitis iusto corporis explicabo. Neque.</p>
+                            <div class="project-content">
+                                <span class="project-content-tag">TAG DO PROJETO</span>
+                                <h3 class="project-content-name">Nome do projeto</h3>
+                                <p class="project-content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum malesuada congue tempus. Et elit etiam quis eu dignissim elementum scelerisque.</p>
+                            </div>
                         </div>
                         <div class="projects-container-content-box">
-                            <img src="./assets/images/project2.jpg" alt="Projeto (NOME PROJETO)">
-                            <span>TAG DO PROJETO</span>
-                            <h3>Nome do projeto</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam rem aspernatur quos iste odit unde nostrum deleniti, consequatur aperiam impedit non at dolores velit sunt debitis iusto corporis explicabo. Neque.</p>
+                            <img src="./assets/images/project1.jpg" alt="Projeto (NOME PROJETO)">
+                            <div class="project-content">
+                                <span class="project-content-tag">TAG DO PROJETO</span>
+                                <h3 class="project-content-name">Nome do projeto</h3>
+                                <p class="project-content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum malesuada congue tempus. Et elit etiam quis eu dignissim elementum scelerisque.</p>
+                            </div>
                         </div>
                         <div class="projects-container-content-box">
-                            <img src="./assets/images/project3.jpg" alt="Projeto (NOME PROJETO)">
-                            <span>TAG DO PROJETO</span>
-                            <h3>Nome do projeto</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam rem aspernatur quos iste odit unde nostrum deleniti, consequatur aperiam impedit non at dolores velit sunt debitis iusto corporis explicabo. Neque.</p>
+                            <img src="./assets/images/project1.jpg" alt="Projeto (NOME PROJETO)">
+                            <div class="project-content">
+                                <span class="project-content-tag">TAG DO PROJETO</span>
+                                <h3 class="project-content-name">Nome do projeto</h3>
+                                <p class="project-content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum malesuada congue tempus. Et elit etiam quis eu dignissim elementum scelerisque.</p>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div>        
+                    <div class="projects-container-carrosel">
+                        <div class="projects-container-carrosel-dots">        
                             <svg width="40" height="8" viewBox="0 0 40 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="4" cy="4" r="4" fill="#9F40EB"/>
                             <circle cx="20" cy="4" r="4" fill="white" fill-opacity="0.1"/>
@@ -160,7 +166,7 @@
                             </svg>
                         </div>
                         <div>
-                            <div>
+                            <div class="projects-container-carrosel-arrow">
                                 <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14 16L10 12L14 8" stroke="white" stroke-opacity="0.1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M66 16L70 12L66 8" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -173,7 +179,7 @@
             <section id="contact">
                 <div class="contact-container">
                     <div class="section-introduce">
-                        <span class="span-title">Contato</span>
+                        <span class="section-title">Contato</span>
                         <h2 class="section-subtitle">Fale diretamente comigo</h2>
                         <div> <!-- Linha aqui--></div>
                     </div>
@@ -207,12 +213,12 @@
                     <div class="footer-content">
                         <nav>
                             <ul>
-                                <span class="span-title">Mapa do Site</span>
+                                <span class="section-title">Mapa do Site</span>
                                 <li><a href="#about-me">Sobre Mim</a></li>
                                 <li><a href="#projects">Projetos</a></li>
                             </ul>
                             <ul>
-                                <span class="span-title">Redes Sociais</span>
+                                <span class="section-title">Redes Sociais</span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 3H16.504C18.987 3 21 5.013 21 7.496V16.505C21 18.987 18.987 21 16.504 21H7.496C5.013 21 3 18.987 3 16.504V7.5C3 5.015 5.015 3 7.5 3V3Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -230,7 +236,7 @@
                                 </div>
                             </ul>
                             <ul>
-                                <span class="span-title">Contato</span>
+                                <span class="section-title">Contato</span>
                                 <div>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.3991 16.6102L18.2261 15.4372C17.6401 14.8512 16.6901 14.8512 16.1051 15.4372L15.1831 16.3592C14.9771 16.5652 14.6651 16.6342 14.3991 16.5172C13.0631 15.9322 11.7431 15.0452 10.5661 13.8682C9.39411 12.6962 8.51011 11.3822 7.92411 10.0512C7.80211 9.77621 7.87311 9.45321 8.08611 9.24021L8.91211 8.41421C9.58311 7.74321 9.58311 6.79421 8.99711 6.20821L7.82411 5.03521C7.04311 4.25421 5.77711 4.25421 4.99611 5.03521L4.34411 5.68621C3.60311 6.42721 3.29411 7.49621 3.49411 8.55621C3.98811 11.1692 5.50611 14.0302 7.95511 16.4792C10.4041 18.9282 13.2651 20.4462 15.8781 20.9402C16.9381 21.1402 18.0071 20.8312 18.7481 20.0902L19.3991 19.4392C20.1801 18.6582 20.1801 17.3922 19.3991 16.6102V16.6102Z" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

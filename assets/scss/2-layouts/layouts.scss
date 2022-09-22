@@ -1,4 +1,5 @@
 @use 'layouts-placeholders';
 @use 'header';
-@use 'introduce';
-@use 'about-me';
+@use 'section-introduce';
+@use 'section-about-me';
+@use 'section-projects';
