@@ -33,7 +33,7 @@ a, button{
     text-decoration: none;
 }
 
-button{
+button, input, textarea{
     cursor: pointer;
     border: none;
     outline: 0;
@@ -41,4 +41,8 @@ button{
 
 span{
     display: block;
+}
+
+input, textarea{
+    cursor: auto;
 }
