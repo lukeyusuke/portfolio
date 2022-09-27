@@ -1,0 +1,63 @@
+@use '../1-base/variables';
+@use '../2-layouts/layouts-placeholders';
+
+.footer{
+    &-container{
+        padding: 50px variables.$section-padding;
+        @extend %flex-model;
+
+        &-links{
+            @extend %flex-model;
+            width: 60%;
+
+            &-box{
+                padding: 1rem;
+                width: 25%;
+                
+                span{
+                    color: variables.$text-color;
+                    font-size: .9rem;
+                    margin-bottom: 1rem;
+                }
+
+                .links-content{
+                    @extend %flex-model;
+                    margin-bottom: 1rem;
+                    justify-content: left;
+                    gap: 5px;
+
+                    a:hover{
+                        color: variables.$light-purple
+                    }
+                }
+            }
+
+        }
+
+        &-icon{
+            @extend %flex-model;
+
+            &-box{
+                border-radius: 1rem 0;
+                cursor: pointer;
+                margin-right: 1.5rem;
+                padding: .7rem;
+            }
+
+            &-box:last-child::before{
+                content: 'Voltar ao topo';
+                opacity: 0;
+                transform: translate(-1.25rem , -1rem);
+                transition: .4s;
+                width: 120px;
+            }
+
+            &-box:last-child:hover::before{
+                background: transparent;
+                opacity: 1;
+                transform: translate(-1.25rem ,-2rem);
+                width: 120px;
+            }
+        }
+    }
+}

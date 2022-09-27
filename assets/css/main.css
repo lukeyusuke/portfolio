@@ -50,7 +50,7 @@ input, textarea {
   width: 100%;
 }
 
-.projects-container-content, .projects-container .projects-container-carrosel, .about-me-container, .introduce-container, .header-content, .header-content ul, .header-content .links-item, .header-content .icons-item {
+.footer-container, .footer-container-links, .footer-container-links-box .links-content, .footer-container-icon, .projects-container-content, .projects-container .projects-container-carrosel, .about-me-container, .introduce-container, .header-content, .header-content ul, .header-content .links-item, .header-content .icons-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,7 +60,7 @@ input, textarea {
 .header-content {
   padding: 0.75rem 150px 1rem 150px;
 }
-.header-content ul .links-item li {
+.header-content ul .links-item .link-item {
   margin: 0.75rem;
 }
 .header-content ul .links-item a {
@@ -167,7 +167,7 @@ input, textarea {
   height: 40px;
   width: 145px;
 }
-.about-me-container-content .btn-cv a {
+.about-me-container-content .btn-cv span {
   color: #9F40EB;
 }
 
@@ -239,6 +239,49 @@ input, textarea {
 .contact-container .contact-form .btn-message {
   padding: 0.75rem;
   width: 100%;
+}
+
+.footer-container {
+  padding: 50px 150px;
+}
+.footer-container-links {
+  width: 60%;
+}
+.footer-container-links-box {
+  padding: 1rem;
+  width: 25%;
+}
+.footer-container-links-box span {
+  color: #FFF;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.footer-container-links-box .links-content {
+  margin-bottom: 1rem;
+  justify-content: left;
+  gap: 5px;
+}
+.footer-container-links-box .links-content a:hover {
+  color: #9F40EB;
+}
+.footer-container-icon-box {
+  border-radius: 1rem 0;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  padding: 0.7rem;
+}
+.footer-container-icon-box:last-child::before {
+  content: "Voltar ao topo";
+  opacity: 0;
+  transform: translate(-1.25rem, -1rem);
+  transition: 0.4s;
+  width: 120px;
+}
+.footer-container-icon-box:last-child:hover::before {
+  background: transparent;
+  opacity: 1;
+  transform: translate(-1.25rem, -2rem);
+  width: 120px;
 }
 
 .btn {
