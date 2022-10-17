@@ -1,20 +1,25 @@
 @use '../1-base/variables';
 @use 'layouts-placeholders';
+@use '../1-base/base-mixins';
 
 .projects-container{
     background: variables.$light-purple-hover;
     padding: 125px variables.$section-padding;
 
+    @include base-mixins.mobile{
+        padding: 125px 1.5rem;
+    }
+
     .section-introduce{
         text-align: center;
-
-        .small-line{
-            margin: 0 auto;
-        }
     }
 
     &-content{
         @extend %flex-model;
+
+        @include base-mixins.mobile{
+            justify-content: center;
+        }
 
         &-box{
             background-color: variables.$dark-gray;
@@ -54,5 +59,15 @@
 
     .projects-container-carrosel{
         @extend %flex-model;
+
+        @include base-mixins.mobile{
+            justify-content: center;
+        }
+
+        &-arrow{
+            @include base-mixins.mobile{
+                display: none;
+            }
+        }
     }
 }

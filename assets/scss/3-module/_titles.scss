@@ -1,4 +1,5 @@
 @use '../1-base/variables';
+@use '../1-base/base-mixins';
 
 .section-title{
     color: variables.$light-purple;
@@ -11,6 +12,11 @@
     color: variables.$text-color;
     font-weight: 400;
     margin: .5rem 0;
+
+    @include base-mixins.mobile{
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
 }
 
 .section-introduce{

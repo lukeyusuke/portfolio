@@ -1,0 +1,6 @@
+// MEDIA 600px - Celular
+@mixin mobile{
+    @media(max-width: 600px){
+        @content;
+    }
+}

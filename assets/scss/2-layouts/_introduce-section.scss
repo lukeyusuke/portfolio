@@ -1,5 +1,6 @@
 @use '../1-base/variables';
 @use '../2-layouts/layouts-placeholders';
+@use '../1-base/base-mixins';
 
 .introduce{
     &-container{
@@ -8,8 +9,19 @@
         align-items: flex-start;
         padding: 6rem variables.$section-padding 0 variables.$section-padding;  
 
+        @include base-mixins.mobile{
+            padding: 3rem 1.5rem 0 1.5rem;
+            justify-content: center;
+        }
+
         &-content{
             margin-top: 8rem;
+            
+            @include base-mixins.mobile{
+                margin-top: 3rem;
+                order: 1;
+                text-align: center; 
+            }
 
             &-message{
                 text-align: center;
@@ -24,6 +36,10 @@
 
             &-name{
                 font-size: 4rem;
+
+                @include base-mixins.mobile{
+                    font-size: 3rem; // Adicionar clamp posteriormente
+                }
             }
 
             &-job{
@@ -36,8 +52,13 @@
             }
 
             &-text{
-                width:  450px;
+                width: 450px;
                 margin-bottom: 8rem;
+
+                @include base-mixins.mobile{
+                    margin-bottom: 6rem;
+                    width: 400px;
+                }
             }
         }
 
@@ -45,6 +66,11 @@
             img{
                 @extend %img-style;
                 border-radius: .5rem .5rem 0 0;
+
+                @include base-mixins.mobile{
+                    border-radius: .5rem;
+                    width: 300px;
+                }
             }
         }
     }

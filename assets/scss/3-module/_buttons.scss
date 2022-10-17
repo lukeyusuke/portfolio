@@ -1,5 +1,6 @@
 @use '../1-base/variables';
 @use '../2-layouts/layouts-placeholders';
+@use '../1-base/base-mixins';
 
 .btn{
     background-color: variables.$light-purple-hover;
@@ -7,6 +8,10 @@
     font-weight: variables.$bold-font;
     color: variables.$light-purple;
     position: relative;
+
+    @include base-mixins.mobile{
+        margin: 0 auto;
+    }
 
     &::before{
         content: '';

@@ -1,10 +1,22 @@
 @use '../1-base/variables';
 @use '../2-layouts/layouts-placeholders';
+@use '../1-base/base-mixins';
 
 .footer{
     &-container{
-        padding: 50px variables.$section-padding;
+        padding: 50px variables.$section-padding 20px variables.$section-padding;
         @extend %flex-model;
+
+        @include base-mixins.mobile{
+            padding: 50px 1.5rem;
+            flex-direction: column;
+        }
+
+        &-logo{
+            @include base-mixins.mobile{
+                margin-bottom: 2rem;
+            }
+        }
 
         &-links{
             @extend %flex-model;
@@ -14,17 +26,33 @@
                 padding: 1rem;
                 width: 25%;
                 
+                @include base-mixins.mobile{
+                    width: 100%;
+                    display: block;
+                    padding-bottom: 2.5rem;
+                }
+                
                 span{
                     color: variables.$text-color;
                     font-size: .9rem;
                     margin-bottom: 1rem;
+
+                    @include base-mixins.mobile{
+                        text-align: center;
+                    }
                 }
 
                 .links-content{
                     @extend %flex-model;
+                    width: 200px;
                     margin-bottom: 1rem;
                     justify-content: left;
                     gap: 5px;
+
+                    @include base-mixins.mobile{
+                        justify-content: center;
+                        width: 100%;
+                    }
 
                     a:hover{
                         color: variables.$light-purple
@@ -36,6 +64,10 @@
 
         &-icon{
             @extend %flex-model;
+
+            @include base-mixins.mobile{
+                gap: 2rem;
+            }
 
             &-box{
                 border-radius: 1rem 0;
@@ -58,6 +90,16 @@
                 transform: translate(-1.25rem ,-2rem);
                 width: 120px;
             }
+        }
+    }
+
+    .copyright{
+        background-color: variables.$light-purple-hover;
+        padding: 1rem;
+        text-align: center;
+
+        @include base-mixins.mobile{
+            font-size: .9rem;
         }
     }
 }

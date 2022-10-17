@@ -1,38 +1,68 @@
 @use '../1-base/variables';
 @use '../2-layouts/layouts-placeholders';
+@use '../1-base/base-mixins';
 
 .header-content{
     padding: .75rem variables.$section-padding 1rem variables.$section-padding;
     @extend %flex-model;
 
-    ul, .links-item, .icons-item{
-        @extend %flex-model;
+    @include base-mixins.mobile{
+        padding: .75rem 1.5rem 1rem 1.5rem;
     }
 
-    ul{
-        .links-item{
-            .link-item{
-                margin: .75rem;
-            }
+    .nav, .menu, .links-item, .icons-item{
+        @extend %flex-model;        
+    }
+
+    .menu{
+        @include base-mixins.mobile{
+            background-color: rgba(18,18,18, 0.99);
+            display: block;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            text-align: center;
+            transition: .6s;
+            visibility: hidden;
+            height: 0px;
+            width: 100%;
+            z-index: 1;
+        }
+    }
+
     
-            a{
-                font-weight: variables.$bold-font;
-                &:hover{
-                    color: variables.$light-purple;
-                }
-            }
+    .icons-item, .links-item{
+        @include base-mixins.mobile{
+            display: none;
+        }
+    }
+    
+    .hidden{
+        display: none;
+    }
+
+    .links-item{
+        .link-item{
+            margin: .75rem;
         }
 
-        .icons-item{
-            margin: 0 variables.$section-subtitle-size;
+        a{
+            font-weight: variables.$bold-font;
+            &:hover{
+                color: variables.$light-purple;
+            }
+        }
+    }
 
-            .icon-link{
-                margin: 0 .5rem;
-                height: 20px;
-        
-                svg:hover path[stroke], svg:hover rect[stroke]{
-                    stroke: variables.$light-purple;
-                }
+    .icons-item{
+        margin: 0 variables.$section-subtitle-size;
+
+        .icon-link{
+            margin: 0 .5rem;
+            height: 20px;
+    
+            svg:hover path[stroke], svg:hover rect[stroke]{
+                stroke: variables.$light-purple;
             }
         }
     }
@@ -40,5 +70,41 @@
     .btn-contact{
         height: 40px;
         width: 110px;
+    }
+
+    .btn-menu-mobile{
+        display: none;
+
+        @include base-mixins.mobile{
+            display: block;
+            background: none;
+            margin: .25rem 0 0 1rem;
+        }
+    }
+
+    nav.active{
+        @include base-mixins.mobile{
+            .links-item, .hidden{
+                display: block;
+            }
+
+            .menu{
+                height: calc(100vh - 73px);
+                visibility: visible;
+            }
+            
+            .menu, .links-item{
+                margin: 0;
+
+                .link-item{
+                    margin: 0;
+                    padding: 1rem;
+                }
+
+                .link-item + .link-item{
+                    border-top: 1px solid rgba(0,0,0,0.2);
+                }
+            }       
+        }
     }
 }

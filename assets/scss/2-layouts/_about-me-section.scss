@@ -1,5 +1,6 @@
 @use '../1-base/variables';
 @use '../2-layouts/layouts-placeholders';
+@use '../1-base/base-mixins';
 
 .about-me{
     &-container{
@@ -7,10 +8,20 @@
         @extend %flex-model;
         align-items: flex-start;
 
+        @include base-mixins.mobile{
+            padding: variables.$section-padding 1.5rem;
+            justify-content: center;
+        }
+
         &-img{
             img{
                 @extend %img-style;
-                border-radius: .5rem 0;
+                border-radius: 1rem 0;
+
+                @include base-mixins.mobile{
+                    border-radius: 1rem;
+                    width: 300px;
+                }
             }
         }
 
@@ -19,18 +30,35 @@
             margin-top: 2.5rem;
             width: 50%;
 
+            @include base-mixins.mobile{
+                text-align: center;
+            }
+
             .small-line{
                 margin: 0;
+
+                @include base-mixins.mobile{
+                    margin: 0 auto
+                }
             }
 
             .tabs{
                 margin: 1.5rem 0 3rem 0;
+                
+                @include base-mixins.mobile{
+                    display: none;
+                }
 
                 &-btn{
                     border-radius: .5rem 0 .5rem 0;
                     margin-right: .2rem;        
                     height: 30px;
                     width: 125px;
+
+                    &::before{
+                        content: '';
+                        border-radius: .5rem 0 .5rem 0;
+                    }
                 }
 
                 &-btn:nth-child(2),
@@ -45,10 +73,18 @@
                 &-title{
                     font-size: variables.$h3-size;
                     color: variables.$light-purple;
+                    
+                    @include base-mixins.mobile{
+                        margin-top: 2.5rem;
+                    }
                 }
 
                 &-text{
-                    margin: 1.5rem 0 4.5rem 0;
+                    margin: 1.5rem auto 4.5rem auto;
+                    
+                    @include base-mixins.mobile{
+                        width: 400px;
+                    }
                 }
             }
 
