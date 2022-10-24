@@ -13,6 +13,16 @@ html{
 
 body{
     background-color: variables.$bg-color;
+    transition: .5s;
+}
+
+body.light{
+    background-color: #FDFBFB;
+    transition: .5s;
+
+    p, h1, h2, a{
+        color: variables.$bg-color;
+    }
 }
 
 p{
@@ -32,6 +42,7 @@ a, button{
     color: variables.$text-color;
     text-decoration: none;
 }
+
 
 button, input, textarea{
     cursor: pointer;

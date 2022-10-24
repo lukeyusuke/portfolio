@@ -2,6 +2,43 @@
 @use '../2-layouts/layouts-placeholders';
 @use '../1-base/base-mixins';
 
+body.light{
+    .nav{
+        .menu{
+            @include base-mixins.mobile{
+                background-color: rgba(255,255,255, .8);
+            }
+        }
+
+        .btn-menu-mobile{
+            svg{
+                path{
+                    stroke: variables.$bg-color;
+                }
+            }
+        }
+    }
+
+    .logo{
+        svg{
+            path:first-child{
+                fill: variables.$bg-color;
+            }
+        }
+    }
+    .links-item{
+        a{
+            color: variables.$bg-color;
+        }
+    }
+
+    .icons-item{
+        svg path[stroke], svg rect[stroke]{
+            stroke: variables.$bg-color;
+        }
+    }
+}
+
 .header-content{
     padding: .75rem variables.$section-padding 1rem variables.$section-padding;
     @extend %flex-model;
@@ -16,7 +53,7 @@
 
     .menu{
         @include base-mixins.mobile{
-            background-color: rgba(18,18,18, 0.99);
+            background-color: rgba(18,18,18, 0.8);
             display: block;
             position: absolute;
             top: 70px;

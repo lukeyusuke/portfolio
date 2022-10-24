@@ -2,6 +2,27 @@
 @use 'layouts-placeholders';
 @use '../1-base/base-mixins';
 
+body.light{
+    .projects-container{
+        &-content{
+            &-box{
+                background-color: variables.$text-color;
+
+                .project-content-intro-links{
+                    path{
+                        stroke: variables.$bg-color;
+                    }
+                }
+
+                .project-content-intro-titles-name,
+                .project-content-paragraph{
+                    color: variables.$bg-color;
+                }
+            }
+        }
+    }
+}
+
 .projects-container{
     background: variables.$light-purple-hover;
     padding: 125px variables.$section-padding;
@@ -25,6 +46,7 @@
             background-color: variables.$dark-gray;
             border-radius: 1rem 0;
             margin: 4rem 0 2rem 0;
+            position: relative;
             height: 400px;
             width: 330px;
 
@@ -34,19 +56,41 @@
             }
         }
 
+
         .project-content{
             padding-left: 20px;
 
-            &-tag{
-                color: variables.$light-purple;
-                margin: 1rem 0 .25rem 0;
-                font-size: 0.75rem;
-                font-weight: 700;
+            &-intro{
+                @extend %flex-model;
+
+                &-titles{
+                    &-tag{
+                        color: variables.$light-purple;
+                        margin: 1rem 0 .25rem 0;
+                        font-size: 0.75rem;
+                        font-weight: 700;
+                    }
+        
+                    &-name{
+                        color: variables.$text-color;
+                    }
+                }
+
+                &-links{
+                    margin: .75rem 1rem 0 0;
+
+                    svg{
+                        margin-right: 1rem;
+                        
+                        &:hover{
+                            path{
+                                stroke: variables.$light-purple;
+                            }
+                        }
+                    }
+                }
             }
 
-            &-name{
-                color: variables.$text-color;
-            }
 
             &-paragraph{
                 color: variables.$text-project-color;

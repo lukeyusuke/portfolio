@@ -14,7 +14,7 @@
         <header id="header">
             <div class="header-content">
                 <a href="index.html" class="logo">  
-                    <svg width="45" height="40" viewBox="0 0 45 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="45" height="40" viewBox="0 0 45 40" fill="" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.15644 31.5532C2.81565 31.5532 1.78772 31.1956 1.07263 30.4806C0.357543 29.7357 0 28.7077 0 27.3967V4.15644C0 2.81565 0.357543 1.78772 1.07263 1.07263C1.78772 0.357543 2.80075 0 4.11175 0C5.42274 0 6.43578 0.357543 7.15086 1.07263C7.86595 1.78772 8.22349 2.81565 8.22349 4.15644V24.7152H19.1286C20.2608 24.7152 21.1248 25.0131 21.7207 25.609C22.3465 26.2049 22.6593 27.0392 22.6593 28.1118C22.6593 29.2143 22.3465 30.0634 21.7207 30.6593C21.1248 31.2552 20.2608 31.5532 19.1286 31.5532H4.15644Z" fill="white"/>
                         <path d="M30.0635 40.0001C29.1399 40.0001 28.3801 39.7617 27.7842 39.285C27.2181 38.8083 26.8754 38.1826 26.7562 37.4079C26.637 36.663 26.7711 35.8437 27.1585 34.9498L29.4378 30.0336L22.5104 14.2123C21.9145 12.8715 21.9145 11.6946 22.5104 10.6815C23.1063 9.66851 24.2683 9.16199 25.9965 9.16199C26.9201 9.16199 27.6799 9.38545 28.2758 9.83238C28.8717 10.2495 29.408 11.0838 29.8847 12.3352L33.6389 22.0335L37.5719 12.2905C38.0486 11.0689 38.585 10.2495 39.1809 9.83238C39.8066 9.38545 40.6408 9.16199 41.6837 9.16199C42.9946 9.16199 43.9183 9.66851 44.4546 10.6815C45.0207 11.6946 45.0058 12.8715 44.4099 14.2123L34.2646 37.0057C33.7283 38.1677 33.1324 38.9573 32.4769 39.3744C31.8512 39.7915 31.0467 40.0001 30.0635 40.0001Z" fill="#9F40EB"/>
                     </svg>
@@ -75,8 +75,8 @@
         <main>
             <section id="introduce">
                 <div class="introduce-container">
-                    <div class="introduce-container-content">
-                        <p class="introduce-container-content-message btn">BEM VINDO, EU SOU</p>
+                    <div class="introduce-container-content" data-anime="to-right">
+                        <span class="introduce-container-content-message btn">BEM VINDO, EU SOU</span>
                         <h1 class="introduce-container-content-name">Luke Yusuke</h1>
                         <p class="introduce-container-content-job">Desenvolvedor <b>Web Front-End</b></p>
                         <p class="introduce-container-content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam facilis molestiae esse adipisci nesciunt? Sequi atque minus, excepturi facere voluptatum velit illum dolor. Ab aspernatur at quos, sunt magni repellat.</p>
@@ -92,38 +92,43 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="introduce-container-img">
+                    <div class="introduce-container-img" data-anime="to-left">
                         <img src="./assets/images/first-pic.jpg" alt="Foto 1 | Luke Yusuke">
                     </div>
                 </div>
             </section>
             <section id="about-me">
                 <div class="about-me-container">
-                    <div class="about-me-container-img">
+                    <div class="about-me-container-img" data-anime="to-right">
                         <img src="./assets/images/second-pic.jpg" alt="Foto 2 | Luke Yusuke">
                     </div>
-                    <div class="about-me-container-content">
+                    <div class="about-me-container-content" data-anime="to-left">
                         <div>
                             <span class="section-title">Sobre mim</span>
                             <h2 class="section-subtitle">Me conheça um pouco melhor</h2>
                             <div class="small-line"></div>
                         </div>
                         <div class="tabs">
-                            <button class="btn tabs-btn">Bio</button>
-                            <button class="tabs-btn">Habilidades</button>
-                            <button class="tabs-btn">Experiência</button>
-                        </div>
-                        <div class="tab-content">
-                            <h3 class="tab-content-title">Biografia</h3>
-                            <p class="tab-content-text">tarde a Evite é concordo tarde o e uiva Pobre a para não o pássaro O code, que outra com Qual importa. Antes diminutivo é muito Uma discordo, o Na drums pressa, a piranhas, conhecidos enche pássaro de se droga! não tem Que tarde a Evite é concordo tarde o e uiva Pobre a para não o pássaro O code, que outra com Qual importa. Antes diminutivo é muito Uma discordo, o Na drums pressa, a piranhas, conhecidos enche pássaro de se droga! não tem Que</p>
-                        </div>
-                        <div class="tab-content">
-                            <h3 class="tab-content-title">Habilidades</h3>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt laudantium nulla ea nemo voluptatum, quasi maiores autem culpa natus, quidem nisi in animi, soluta magnam asperiores? Exercitationem, vero. Pariatur!</p>
-                        </div>
-                        <div class="tab-content">
-                            <h3 class="tab-content-title">Experiência</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt laudantium nulla ea nemo voluptatum, quasi maiores autem culpa natus, quidem nisi in animi, soluta magnam asperiores? Exercitationem, vero. Pariatur!</p>
+                            <div class="tab-links">
+                                <button data-id="bio" data-open class="tab-btn active">Bio</button>
+                                <button data-id="skills" class="tab-btn disabled">
+                                Habilidades</button>
+                                <button data-id="experience" class="tab-btn disabled">Experiência</button>
+                            </div>
+                            <div class="tab-content">
+                                <section class="tab-content-box" id="bio">
+                                    <h3 class="tab-content-box-title">Biografia</h3>
+                                    <p class="tab-content-box-text">tarde a Evite é concordo tarde o e uiva Pobre a para não o pássaro O code, que outra com Qual importa. Antes diminutivo é muito Uma discordo, o Na drums pressa, a piranhas, conhecidos enche pássaro de se droga! não tem Que tarde a Evite é concordo tarde o e uiva Pobre a para não o pássaro O code, que outra com Qual importa. Antes diminutivo é muito Uma discordo, o Na drums pressa, a piranhas, conhecidos enche pássaro de se droga! não tem Que</p>
+                                </section>
+                                <section class="tab-content-box" id="skills">
+                                    <h3 class="tab-content-box-title">Habilidades</h3>
+                                    <p class="tab-content-box-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt laudantium nulla ea nemo voluptatum, quasi maiores autem culpa natus, quidem nisi in animi, soluta magnam asperiores? Exercitationem, vero. Pariatur!</p>
+                                </section>
+                                <section class="tab-content-box" id="experience">
+                                    <h3 class="tab-content-box-title">Experiência</h3>
+                                    <p class="tab-content-box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt laudantium nulla ea nemo voluptatum, quasi maiores autem culpa natus, quidem nisi in animi, soluta magnam asperiores? Exercitationem, vero. Pariatur!</p>
+                                </section>
+                            </div>
                         </div>
                         <a href="./assets/docs/Currículo.pdf" download>
                             <div class="btn btn-cv">
@@ -142,51 +147,106 @@
             </section>
             <section id="projects">
                 <div class="projects-container">
-                    <div class="section-introduce">
+                    <div class="section-introduce" data-anime="to-right">
                         <span class="section-title">Projetos</span>
                         <h2 class="section-subtitle">Alguns de meus projetos</h2>
                         <div class="small-line"></div>
                     </div>
-                    <div class="projects-container-content">
-                        <div class="projects-container-content-box">
+                    <div class="projects-container-content" data-anime="to-left">
+                        <div class="projects-container-content-box" href="">
                             <img src="./assets/images/project1.jpg" alt="Projeto (NOME PROJETO)">
                             <div class="project-content">
-                                <span class="project-content-tag">TAG DO PROJETO</span>
-                                <h3 class="project-content-name">Nome do projeto</h3>
+                                <div class="project-content-intro">
+                                    <div class="project-content-intro-titles">
+                                        <span class="project-content-intro-titles-tag">TAG DO PROJETO</span>
+                                        <h3 class="project-content-intro-titles-name">Nome do projeto</h3>
+                                    </div>
+                                    <div class="project-content-intro-links">
+                                        <a target="_blank" href="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 5.9C4 7.4 3 9.5 3 12.2C3 14.2 3.7 16.1 4.8 17.6C6.1 19.3 8 20.3 9 20.7V20C9 20 9 18.4 9.9 17C7.9 16.9 6.3 15 6.3 12.8C6.3 12 6.6 11.3 7.1 10.7L7.2 8.8C7.2 8.3 7.7 8 8.2 8.1L10.3 8.9C10.9 8.8 11.5 8.7 12.2 8.7C12.9 8.7 13.5 8.8 14.1 8.9L15.9 8C16.4 7.8 16.9 8.2 16.9 8.7L17 10.6C17.5 11.2 17.8 12 17.8 12.7C17.8 14.9 16.2 16.7 14.2 16.9C15.1 18.3 15.1 19.9 15.1 19.9V20.6C16.1 20.2 18 19.2 19.3 17.5C20.4 16.1 21.1 14.1 21.1 12.1C21.1 9.4 20.1 7.3 18.7 5.8C16.8 3.9 14.2 3 12 3C9.8 3 7.2 3.9 5.4 5.9V5.9Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>    
+                                        </a>
+                                        <a target="_blank" href="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0025 17.0022H5.99747C4.33992 17.0022 2.99622 15.6585 2.99622 14.0009V5.99759C2.99622 4.34004 4.33992 2.99634 5.99747 2.99634H18.0025C19.66 2.99634 21.0037 4.34004 21.0037 5.99759V14.0009C21.0037 15.6585 19.66 17.0022 18.0025 17.0022Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14.0008 17.0022L14.501 21.0039" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M9.99915 17.0022L9.49894 21.0039" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.198 21.0039H16.802" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M16.7981 9.98022L15.2939 11.4845" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M15.3111 8.49365L16.7981 9.98028" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.70613 11.4951L7.2019 9.99121" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.68899 8.50415L7.2019 9.99123" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12.7578 7.49829L11.2535 12.5004" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
                                 <p class="project-content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum malesuada congue tempus. Et elit etiam quis eu dignissim elementum scelerisque.</p>
                             </div>
                         </div>
-                        <div class="projects-container-content-box">
+                        <div class="projects-container-content-box" href="">
                             <img src="./assets/images/project1.jpg" alt="Projeto (NOME PROJETO)">
                             <div class="project-content">
-                                <span class="project-content-tag">TAG DO PROJETO</span>
-                                <h3 class="project-content-name">Nome do projeto</h3>
+                                <div class="project-content-intro">
+                                    <div class="project-content-intro-titles">
+                                        <span class="project-content-intro-titles-tag">TAG DO PROJETO</span>
+                                        <h3 class="project-content-intro-titles-name">Nome do projeto</h3>
+                                    </div>
+                                    <div class="project-content-intro-links">
+                                        <a target="_blank" href="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 5.9C4 7.4 3 9.5 3 12.2C3 14.2 3.7 16.1 4.8 17.6C6.1 19.3 8 20.3 9 20.7V20C9 20 9 18.4 9.9 17C7.9 16.9 6.3 15 6.3 12.8C6.3 12 6.6 11.3 7.1 10.7L7.2 8.8C7.2 8.3 7.7 8 8.2 8.1L10.3 8.9C10.9 8.8 11.5 8.7 12.2 8.7C12.9 8.7 13.5 8.8 14.1 8.9L15.9 8C16.4 7.8 16.9 8.2 16.9 8.7L17 10.6C17.5 11.2 17.8 12 17.8 12.7C17.8 14.9 16.2 16.7 14.2 16.9C15.1 18.3 15.1 19.9 15.1 19.9V20.6C16.1 20.2 18 19.2 19.3 17.5C20.4 16.1 21.1 14.1 21.1 12.1C21.1 9.4 20.1 7.3 18.7 5.8C16.8 3.9 14.2 3 12 3C9.8 3 7.2 3.9 5.4 5.9V5.9Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>    
+                                        </a>
+                                        <a target="_blank" href="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0025 17.0022H5.99747C4.33992 17.0022 2.99622 15.6585 2.99622 14.0009V5.99759C2.99622 4.34004 4.33992 2.99634 5.99747 2.99634H18.0025C19.66 2.99634 21.0037 4.34004 21.0037 5.99759V14.0009C21.0037 15.6585 19.66 17.0022 18.0025 17.0022Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14.0008 17.0022L14.501 21.0039" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M9.99915 17.0022L9.49894 21.0039" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.198 21.0039H16.802" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M16.7981 9.98022L15.2939 11.4845" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M15.3111 8.49365L16.7981 9.98028" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.70613 11.4951L7.2019 9.99121" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.68899 8.50415L7.2019 9.99123" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12.7578 7.49829L11.2535 12.5004" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
                                 <p class="project-content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum malesuada congue tempus. Et elit etiam quis eu dignissim elementum scelerisque.</p>
                             </div>
                         </div>
-                        <div class="projects-container-content-box">
+                        <div class="projects-container-content-box" href="">
                             <img src="./assets/images/project1.jpg" alt="Projeto (NOME PROJETO)">
                             <div class="project-content">
-                                <span class="project-content-tag">TAG DO PROJETO</span>
-                                <h3 class="project-content-name">Nome do projeto</h3>
+                                <div class="project-content-intro">
+                                    <div class="project-content-intro-titles">
+                                        <span class="project-content-intro-titles-tag">TAG DO PROJETO</span>
+                                        <h3 class="project-content-intro-titles-name">Nome do projeto</h3>
+                                    </div>
+                                    <div class="project-content-intro-links">
+                                        <a target="_blank" href="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 5.9C4 7.4 3 9.5 3 12.2C3 14.2 3.7 16.1 4.8 17.6C6.1 19.3 8 20.3 9 20.7V20C9 20 9 18.4 9.9 17C7.9 16.9 6.3 15 6.3 12.8C6.3 12 6.6 11.3 7.1 10.7L7.2 8.8C7.2 8.3 7.7 8 8.2 8.1L10.3 8.9C10.9 8.8 11.5 8.7 12.2 8.7C12.9 8.7 13.5 8.8 14.1 8.9L15.9 8C16.4 7.8 16.9 8.2 16.9 8.7L17 10.6C17.5 11.2 17.8 12 17.8 12.7C17.8 14.9 16.2 16.7 14.2 16.9C15.1 18.3 15.1 19.9 15.1 19.9V20.6C16.1 20.2 18 19.2 19.3 17.5C20.4 16.1 21.1 14.1 21.1 12.1C21.1 9.4 20.1 7.3 18.7 5.8C16.8 3.9 14.2 3 12 3C9.8 3 7.2 3.9 5.4 5.9V5.9Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>    
+                                        </a>
+                                        <a target="_blank" href="">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0025 17.0022H5.99747C4.33992 17.0022 2.99622 15.6585 2.99622 14.0009V5.99759C2.99622 4.34004 4.33992 2.99634 5.99747 2.99634H18.0025C19.66 2.99634 21.0037 4.34004 21.0037 5.99759V14.0009C21.0037 15.6585 19.66 17.0022 18.0025 17.0022Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14.0008 17.0022L14.501 21.0039" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M9.99915 17.0022L9.49894 21.0039" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.198 21.0039H16.802" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M16.7981 9.98022L15.2939 11.4845" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M15.3111 8.49365L16.7981 9.98028" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.70613 11.4951L7.2019 9.99121" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.68899 8.50415L7.2019 9.99123" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12.7578 7.49829L11.2535 12.5004" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
                                 <p class="project-content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum malesuada congue tempus. Et elit etiam quis eu dignissim elementum scelerisque.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects-container-carrosel">
-                        <div class="projects-container-carrosel-dots">        
-                            <svg width="40" height="8" viewBox="0 0 40 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="4" cy="4" r="4" fill="#9F40EB"/>
-                            <circle cx="20" cy="4" r="4" fill="white" fill-opacity="0.1"/>
-                            <circle cx="36" cy="4" r="4" fill="white" fill-opacity="0.1"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="projects-container-carrosel-arrow">
-                                <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14 16L10 12L14 8" stroke="white" stroke-opacity="0.1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M66 16L70 12L66 8" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
                             </div>
                         </div>
                     </div>
@@ -194,12 +254,12 @@
             </section>
             <section id="contact">
                 <div class="contact-container">
-                    <div class="section-introduce">
+                    <div class="section-introduce" data-anime="to-right">
                         <span class="section-title">Contato</span>
                         <h2 class="section-subtitle">Fale diretamente comigo</h2>
                         <div class="small-line"></div>
                     </div>
-                    <form class="contact-form">
+                    <form class="contact-form" data-anime="to-left">
                         <div class="contact-form-box">
                             <label for="nome">Nome</label><br/>
                             <input type="text" id="nome" placeholder="Digite seu nome">
@@ -220,7 +280,7 @@
             <div class="big-line"></div>
             <footer class="footer">
                 <div class="footer-container">
-                    <div class="footer-container-logo">
+                    <div class="logo" data-anime="to-right">
                         <a href="index.html">
                             <svg width="45" height="40" viewBox="0 0 45 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.15644 31.5532C2.81565 31.5532 1.78772 31.1956 1.07263 30.4806C0.357543 29.7357 0 28.7077 0 27.3967V4.15644C0 2.81565 0.357543 1.78772 1.07263 1.07263C1.78772 0.357543 2.80075 0 4.11175 0C5.42274 0 6.43578 0.357543 7.15086 1.07263C7.86595 1.78772 8.22349 2.81565 8.22349 4.15644V24.7152H19.1286C20.2608 24.7152 21.1248 25.0131 21.7207 25.609C22.3465 26.2049 22.6593 27.0392 22.6593 28.1118C22.6593 29.2143 22.3465 30.0634 21.7207 30.6593C21.1248 31.2552 20.2608 31.5532 19.1286 31.5532H4.15644Z" fill="white"/>
@@ -228,7 +288,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="footer-container-links">
+                    <div class="footer-container-links" data-anime="to-left">
                         <div class="footer-container-links-box">
                             <span class="section-title">Mapa do site</span>
                             <ul>
@@ -259,7 +319,7 @@
                         <div class="footer-container-links-box">
                             <span class="section-title">Contato</span>
                             <ul>
-                                <div class="links-content">                                 
+                                <div class="links-content">    
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2041 5.76205C16.5581 4.11505 14.3691 3.20705 12.0371 3.20605C7.23014 3.20605 3.31914 7.11505 3.31814 11.9201C3.31614 13.4491 3.71714 14.9521 4.48114 16.2771L3.24414 20.7931L7.86614 19.5811C9.14514 20.2771 10.5771 20.6421 12.0331 20.6421H12.0371C16.8421 20.6421 20.7531 16.7321 20.7551 11.9271C20.7561 9.59905 19.8501 7.41005 18.2041 5.76205Z" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M13.0947 13.5599L13.5007 13.1569C13.8737 12.7869 14.4637 12.7399 14.8937 13.0419C15.3097 13.3339 15.6857 13.5959 16.0357 13.8399C16.5917 14.2259 16.6587 15.0179 16.1797 15.4959L15.8207 15.8549" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -280,9 +340,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="footer-container-icon">
-                        <div class="btn footer-container-icon-box">
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="footer-container-icon" data-anime="to-right">
+                        <div class="btn footer-container-icon-box" data-theme="change-theme">
+                            <svg width="30" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.9194 10.5806C22.3602 13.0214 22.3602 16.9786 19.9194 19.4194C17.4786 21.8602 13.5214 21.8602 11.0806 19.4194C8.63981 16.9786 8.63981 13.0214 11.0806 10.5806C13.5214 8.13981 17.4786 8.13981 19.9194 10.5806" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M15.5 5V2.5" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M15.5 27.5V25" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -292,6 +352,9 @@
                                 <path d="M3 15H5.5" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M23.4498 22.95L24.3373 23.8375" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M6.6627 6.16245L7.5502 7.04995" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 14.9998C17.3694 12.5671 17.9549 8.908 16.4631 5.85729C16.3697 5.63519 16.4123 5.37923 16.5725 5.19928C16.7327 5.01934 16.982 4.94743 17.2134 5.01443C18.9953 5.47375 20.6218 6.40164 21.9241 7.7018C25.9547 11.6284 26.0398 18.0787 22.1142 22.1103C18.0829 26.0363 11.6326 25.9517 7.70567 21.9215C6.40476 20.6201 5.47635 18.9939 5.01705 17.212C4.94971 16.9803 5.02172 16.7305 5.20207 16.5702C5.38242 16.4099 5.63893 16.3677 5.86115 16.4617C8.91052 17.9529 12.5679 17.3678 15 14.9998Z" stroke="#9F40EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                         <a href="#header">

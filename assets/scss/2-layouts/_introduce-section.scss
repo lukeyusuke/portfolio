@@ -2,6 +2,12 @@
 @use '../2-layouts/layouts-placeholders';
 @use '../1-base/base-mixins';
 
+body.light{
+    .introduce-container-content-job{
+        font-weight: bold;
+    }
+}
+
 .introduce{
     &-container{
         color: variables.$text-color;
@@ -38,7 +44,7 @@
                 font-size: 4rem;
 
                 @include base-mixins.mobile{
-                    font-size: 3rem; // Adicionar clamp posteriormente
+                    font-size: 3rem;
                 }
             }
 

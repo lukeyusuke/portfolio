@@ -2,6 +2,33 @@
 @use '../2-layouts/layouts-placeholders';
 @use '../1-base/base-mixins';
 
+body.light{
+    .footer{
+        .footer-container-icon > .footer-container-icon-box{
+            svg:nth-child(1){
+                display: none;
+            }
+    
+            svg:nth-child(2){
+                display: flex;
+            }
+        }
+    
+        .footer-container-links{
+            span, .links-content{
+                color: variables.$bg-color;
+            }
+        }
+
+        .copyright{
+            p{
+                color: variables.$light-purple;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 .footer{
     &-container{
         padding: 50px variables.$section-padding 20px variables.$section-padding;
@@ -55,7 +82,7 @@
                     }
 
                     a:hover{
-                        color: variables.$light-purple
+                        color: variables.$light-purple;
                     }
                 }
             }
@@ -74,6 +101,10 @@
                 cursor: pointer;
                 margin-right: 1.5rem;
                 padding: .7rem;
+
+                svg:nth-child(2){
+                    display: none;
+                }
             }
 
             &-box:last-child::before{

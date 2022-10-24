@@ -2,6 +2,18 @@
 @use '../2-layouts/layouts-placeholders';
 @use '../1-base/base-mixins';
 
+body.light{
+    .tabs{
+        .tab-links{
+            .disabled{
+                font-weight: variables.$bold-font;
+                color: variables.$bg-color;
+                background-color: rgba(18,18,18, 10%);
+            }
+        }
+    }
+}
+
 .about-me{
     &-container{
         padding: variables.$section-padding;
@@ -43,53 +55,60 @@
             }
 
             .tabs{
-                margin: 1.5rem 0 3rem 0;
-                
-                @include base-mixins.mobile{
-                    display: none;
-                }
+                .tab-links{
+                    margin: 1.5rem 0 3rem 0;
 
-                &-btn{
-                    border-radius: .5rem 0 .5rem 0;
-                    margin-right: .2rem;        
-                    height: 30px;
-                    width: 125px;
+                    
 
-                    &::before{
-                        content: '';
+                    .tab-btn{
                         border-radius: .5rem 0 .5rem 0;
+                        margin-right: .2rem;        
+                        height: 30px;
+                        width: 125px;
+    
+                        &::before{
+                            content: '';
+                            border-radius: .5rem 0 .5rem 0;
+                        }
+                    }
+
+                    .disabled{
+                        font-weight: variables.$bold-font;
+                        background-color: variables.$dark-gray;
+                    }
+
+                    body.light .disabled{
+                        background-color: red;
+                    }
+
+                    .active{
+                        background-color: variables.$light-purple-hover;
+                        color: variables.$light-purple;
+                        font-weight: variables.$bold-font;
                     }
                 }
 
-                &-btn:nth-child(2),
-                &-btn:nth-child(3){
-                    font-weight: variables.$bold-font;
-                    background-color: variables.$dark-gray;
-                }
-            }
+                .tab-content{
+                    .tab-content-box{
+                        &-title{
+                            font-size: variables.$h3-size;
+                            color: variables.$light-purple;
+                            
+                            @include base-mixins.mobile{
+                                margin-top: 2.5rem;
+                            }
+                        }
+        
+                        &-text{
+                            margin: 1.5rem auto 4.5rem auto;
+                            animation: up 1s;
 
-            
-            .tab-content{
-                &-title{
-                    font-size: variables.$h3-size;
-                    color: variables.$light-purple;
-                    
-                    @include base-mixins.mobile{
-                        margin-top: 2.5rem;
-                    }
+                            @include base-mixins.mobile{
+                                width: 400px;
+                            }
+                        }
+                    }                   
                 }
-
-                &-text{
-                    margin: 1.5rem auto 4.5rem auto;
-                    
-                    @include base-mixins.mobile{
-                        width: 400px;
-                    }
-                }
-            }
-
-            .tab-content + .tab-content{
-                display: none;
             }
 
             .btn-cv{
@@ -101,11 +120,22 @@
                 gap: 10px;
                 height: 40px;
                 width: 145px;
-
+    
                 span{
                     color: variables.$light-purple;
                 }
             }
         }
+    }
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+
+    to {
+        opacity: 1;
     }
 }

@@ -2,6 +2,32 @@
 @use '../2-layouts/layouts-placeholders';
 @use '../1-base/base-mixins';
 
+body.light{
+    .contact{
+        &-container{
+            .contact-form{
+                label{
+                    color: variables.$bg-color;
+                }
+
+                input, textarea{
+                    background-color: rgba(12, 12, 12, 5%);
+                    color: rgba(18, 18, 18, 50%);
+                }
+
+                input::placeholder, textarea::placeholder{
+                    color: rgba(12,12,12, 80%);
+                }
+
+                .btn-message{
+                    background-color: variables.$light-purple;
+                    color: variables.$text-color;
+                }
+            }
+        }
+    }
+}
+
 .contact{
     &-container{
         padding: variables.$section-padding;
