@@ -17,11 +17,11 @@ body{
 }
 
 body.light{
-    background-color: #FDFBFB;
+    background-color: #FFF;
     transition: .5s;
 
     p, h1, h2, a{
-        color: variables.$bg-color;
+        color: #000;
     }
 }
 

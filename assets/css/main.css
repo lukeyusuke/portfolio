@@ -15,11 +15,11 @@ body {
 }
 
 body.light {
-  background-color: #FDFBFB;
+  background-color: #FFF;
   transition: 0.5s;
 }
 body.light p, body.light h1, body.light h2, body.light a {
-  color: #121212;
+  color: #000;
 }
 
 p {
@@ -59,7 +59,7 @@ input, textarea {
   width: 100%;
 }
 
-.footer-container, .footer-container-links, .footer-container-links-box .links-content, .footer-container-icon, .projects-container-content, .projects-container-content .project-content-intro, .projects-container .projects-container-carrosel, .about-me-container, .introduce-container, .header-content, .header-content .nav, .header-content .menu, .header-content .links-item, .header-content .icons-item {
+.footer-container, .footer-container-links, .footer-container-links-box .links-content, .footer-container-icon, .projects-container-content, .projects-container-content .project-content-intro, .projects-container .projects-container-carrosel, .about-me-container, .about-me-container-content .tabs .tab-content .tab-content-box-languages, .about-me-container-content .tabs .tab-content .tab-content-box-languages-style, .introduce-container, .header-content, .header-content .nav, .header-content .menu, .header-content .links-item, .header-content .icons-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -240,7 +240,7 @@ body.light .introduce-container-content-job {
 body.light .tabs .tab-links .disabled {
   font-weight: 700;
   color: #121212;
-  background-color: rgba(18, 18, 18, 0.1);
+  background-color: rgba(18, 18, 18, 0.2);
 }
 
 .about-me-container {
@@ -281,7 +281,7 @@ body.light .tabs .tab-links .disabled {
   }
 }
 .about-me-container-content .tabs .tab-links {
-  margin: 1.5rem 0 3rem 0;
+  margin: 1.5rem 0 2rem 0;
 }
 .about-me-container-content .tabs .tab-links .tab-btn {
   border-radius: 0.5rem 0 0.5rem 0;
@@ -296,9 +296,6 @@ body.light .tabs .tab-links .disabled {
 .about-me-container-content .tabs .tab-links .disabled {
   font-weight: 700;
   background-color: #2A2A2A;
-}
-.about-me-container-content .tabs .tab-links body.light .disabled {
-  background-color: red;
 }
 .about-me-container-content .tabs .tab-links .active {
   background-color: rgba(158, 64, 235, 0.1019607843);
@@ -315,13 +312,45 @@ body.light .tabs .tab-links .disabled {
   }
 }
 .about-me-container-content .tabs .tab-content .tab-content-box-text {
-  margin: 1.5rem auto 4.5rem auto;
   animation: up 1s;
+  margin: 1rem auto 1.5rem auto;
 }
 @media (max-width: 600px) {
   .about-me-container-content .tabs .tab-content .tab-content-box-text {
     width: 400px;
   }
+}
+.about-me-container-content .tabs .tab-content .tab-content-box-languages {
+  animation: up 1s;
+  justify-content: left;
+  margin: 1.5rem 0 3rem 0;
+  gap: 1.5rem;
+}
+@media (max-width: 600px) {
+  .about-me-container-content .tabs .tab-content .tab-content-box-languages {
+    justify-content: center;
+  }
+}
+.about-me-container-content .tabs .tab-content .tab-content-box-languages-style {
+  border-radius: 0.5rem 0;
+  justify-content: center;
+  height: 65px;
+  width: 65px;
+}
+.about-me-container-content .tabs .tab-content .tab-content-box-languages #language1 {
+  background-color: rgba(232, 89, 12, 0.2);
+}
+.about-me-container-content .tabs .tab-content .tab-content-box-languages #language2 {
+  background-color: rgba(28, 126, 214, 0.2);
+}
+.about-me-container-content .tabs .tab-content .tab-content-box-languages #language3 {
+  background-color: rgba(207, 100, 154, 0.2);
+}
+.about-me-container-content .tabs .tab-content .tab-content-box-languages #language4 {
+  background-color: rgba(252, 196, 25, 0.2);
+}
+.about-me-container-content .tabs .tab-content .tab-content-box-languages #language5 {
+  background-color: rgba(228, 76, 48, 0.2);
 }
 .about-me-container-content .btn-cv {
   border: 1px solid #9F40EB;
@@ -385,6 +414,7 @@ body.light .projects-container-content-box .project-content-paragraph {
 .projects-container-content-box img {
   border-top-left-radius: 0.5rem;
   width: 100%;
+  filter: opacity(0.2);
 }
 .projects-container-content .project-content {
   padding-left: 20px;
@@ -427,11 +457,11 @@ body.light .contact-container .contact-form label {
   color: #121212;
 }
 body.light .contact-container .contact-form input, body.light .contact-container .contact-form textarea {
-  background-color: rgba(12, 12, 12, 0.05);
-  color: rgba(18, 18, 18, 0.5);
+  background-color: rgba(18, 18, 18, 0.1);
+  color: #121212;
 }
 body.light .contact-container .contact-form input::placeholder, body.light .contact-container .contact-form textarea::placeholder {
-  color: rgba(12, 12, 12, 0.8);
+  color: rgba(12, 12, 12, 0.7);
 }
 body.light .contact-container .contact-form .btn-message {
   background-color: #9F40EB;

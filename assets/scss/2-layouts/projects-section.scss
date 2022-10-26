@@ -53,10 +53,11 @@ body.light{
             img{
                 border-top-left-radius: .5rem;
                 width: 100%;
+                filter: opacity(0.2);
             }
+
         }
-
-
+        
         .project-content{
             padding-left: 20px;
 

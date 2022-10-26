@@ -1,5 +1,6 @@
 @use '../1-base/variables';
 @use '../2-layouts/layouts-placeholders';
+@use '../2-layouts/layouts-mixins';
 @use '../1-base/base-mixins';
 
 body.light{
@@ -8,7 +9,7 @@ body.light{
             .disabled{
                 font-weight: variables.$bold-font;
                 color: variables.$bg-color;
-                background-color: rgba(18,18,18, 10%);
+                background-color: rgba(18,18,18, 20%);
             }
         }
     }
@@ -56,9 +57,7 @@ body.light{
 
             .tabs{
                 .tab-links{
-                    margin: 1.5rem 0 3rem 0;
-
-                    
+                    margin: 1.5rem 0 2rem 0;
 
                     .tab-btn{
                         border-radius: .5rem 0 .5rem 0;
@@ -75,10 +74,6 @@ body.light{
                     .disabled{
                         font-weight: variables.$bold-font;
                         background-color: variables.$dark-gray;
-                    }
-
-                    body.light .disabled{
-                        background-color: red;
                     }
 
                     .active{
@@ -100,11 +95,53 @@ body.light{
                         }
         
                         &-text{
-                            margin: 1.5rem auto 4.5rem auto;
                             animation: up 1s;
+                            margin: 1rem auto 1.5rem auto;
 
                             @include base-mixins.mobile{
                                 width: 400px;
+                            }
+                        }
+
+                        &-languages{
+                            @extend %flex-model;
+                            animation: up 1s;
+                            justify-content: left;
+                            margin: 1.5rem 0 3rem 0;
+                            gap: 1.5rem;
+
+                            @include base-mixins.mobile{
+                                justify-content: center;
+                            }
+
+                            &-style{
+                                border-radius: .5rem 0;
+                                @extend %flex-model;
+                                justify-content: center;
+                                height: 65px;
+                                width: 65px;
+
+                                
+                            }
+
+                            #language1{
+                                @include layouts-mixins.div-bg-color(rgba(232, 89, 12, 0.2));
+                            }
+
+                            #language2{
+                                @include layouts-mixins.div-bg-color(rgba(28, 126, 214, 0.2));
+                            }
+
+                            #language3{
+                                @include layouts-mixins.div-bg-color(rgba(207, 100, 154, 20%));
+                            }
+
+                            #language4{
+                                @include layouts-mixins.div-bg-color(rgba(252, 196, 25, 20%));
+                            }
+
+                            #language5{
+                                @include layouts-mixins.div-bg-color(rgba(228, 76, 48, 20%));
                             }
                         }
                     }                   
