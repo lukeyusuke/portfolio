@@ -71,10 +71,11 @@ body.light{
 
                 .links-content{
                     @extend %flex-model;
-                    width: 200px;
+                    gap: 5px;
                     margin-bottom: 1rem;
                     justify-content: left;
-                    gap: 5px;
+                    font-weight: 500;
+                    width: 200px;
 
                     @include base-mixins.mobile{
                         justify-content: center;
