@@ -31,7 +31,7 @@ body.light{
 
 .footer{
     &-container{
-        padding: 50px variables.$section-padding 20px variables.$section-padding;
+        padding: 40px variables.$section-padding 20px variables.$section-padding;
         @extend %flex-model;
 
         @include base-mixins.mobile{

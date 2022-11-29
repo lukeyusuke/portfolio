@@ -66,6 +66,12 @@ body.light{
                     width: 400px;
                 }
             }
+
+            svg{
+                animation: up .5s infinite;
+                animation-iteration-count: infinite; 
+                animation-direction: alternate-reverse
+            }
         }
 
         &-img{

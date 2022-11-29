@@ -29,6 +29,8 @@ window.addEventListener('scroll', () => {
     animeScroll();
 });
 
+// ---
+
 const tabsNavigation = () => {
     const html = {
         links: [...document.querySelector('.tab-links').children],
@@ -86,7 +88,7 @@ window.addEventListener('load', () => {
     tabNavigation.init();
 })
 
-// ANIMAÇÃO DE DARK MODE
+// ----
 
 const changeThemeBtn = document.querySelector('[data-theme]');
 
@@ -98,4 +100,5 @@ changeThemeBtn.addEventListener('click', () => {
     changeBackgroundTheme();
 });
 
-// ANIMAÇÃO CARROSEL
+// ----
+
