@@ -4,11 +4,11 @@
 }
 
 [data-anime="to-right"]{
-    transform: translate3d(7px, 0, 0);
+    transform: translate3d(5px, 0, 0);
 }
 
 [data-anime="to-left"]{
-    transform: translate3d(7px, 0, 0);
+    transform: translate3d(5px, 0, 0);
 }
 
 [data-anime].animate{
@@ -19,7 +19,7 @@
 @keyframes up {
     from {
         opacity: 0;
-        transform: translateY(7px);
+        transform: translateY(5px);
     }
 
     to {
