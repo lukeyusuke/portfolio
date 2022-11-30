@@ -6,6 +6,7 @@
 
 # Portfólio
 
+
 </div>
 
 
@@ -18,6 +19,8 @@
     <li style="padding: 0 10px"><a style="color: #FFF;" href="#contato">Contato</a></li>
 </ul>
 
+![Layout Portfólio](./assets/images/layout.png)
+
 <h4 align="center"><a style="color: #9F40EB; font-weight: bold" href="">Clique para visitar o portfólio</a></h4>
 
 <br/>
@@ -26,8 +29,7 @@
 
 ## 💻 Projeto
 
-
-O portfólio foi construído para mostrar meus projetos realizados como Desenvolvedor, além de mostrar um pouco sobre mim.
+O portfólio foi construído para colocar meus principais projetos realizados como Desenvolvedor, além de mostrar um pouco sobre mim e minha trajetória até aqui.
 
 </div>
 
@@ -37,12 +39,11 @@ O portfólio foi construído para mostrar meus projetos realizados como Desenvol
 
 ## 🗂️ Seções
 
-O projeto possui cinco seções:
+O projeto possui três seções:
 
 - **Home:** Faz uma breve apresentação sobre mim;</li>
 - **Sobre mim:** Mostra uma descrição sobre quem eu sou, meus conhecimentos e minha experiência através de abas;</li>
 - **Projetos:** Apresenta alguns projetos desenvolvidos com link para o Github e para a aplicação;</li>
-- **Contato:** Possibilita ao usuário enviar uma mensagem a partir de um formulário. </li>
 
 </div>
 
@@ -67,11 +68,10 @@ Este projeto foi feito com as seguintes tecnologias:
 
 ## ⚙️ Funcionalidades
 
-- Formulário de envio: É possível enviar uma mensagem para o desenvolvedor da aplicação onde será encaminhado ao e-mail do mesmo;
-
 - Impressão de currículo: Faz o download do CV para a sua máquina;
 
 - Animações JS
+    - Scroll do Mouse: Mostra os conteúdos a partir do scroll do mouse;
     - Menu Mobile: Muda o layout do menu de acordo com o tamanho da tela;
     - Navegação em Tabs: Altera entre conteúdos a partir de abas;
     - Dark/Light Mode: Modifica a visualização da página entre tema "Claro" e "Escuro".
@@ -120,7 +120,7 @@ Este projeto foi feito com as seguintes tecnologias:
 
 ## 👨🏾‍💻 Autor
 
-![Imagem Luke Yusuke]()
+![Imagem Luke Yusuke](/assets/images/luke2.png)
 
 Desenvolvido por <b style="color:#9F40EB">Luke Yusuke 😁</b>
 
