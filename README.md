@@ -20,7 +20,7 @@
 
 <h2 id="sobre">💻 Projeto</h2>
 
-O portfólio foi construído para colocar meus principais projetos realizados como Desenvolvedor, além de mostrar um pouco sobre mim e minha trajetória até aqui.</p>
+O portfólio foi construído para colocar meus principais projetos realizados como Desenvolvedor, além de mostrar um pouco sobre mim e minha trajetória até aqui, sempre com o intuito de melhorar minhas skills.</p>
 <br/>
 
 <h2 id="secoes">🗂️ Seções</h2>

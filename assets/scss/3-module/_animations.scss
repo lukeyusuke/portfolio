@@ -4,11 +4,11 @@
 }
 
 [data-anime="to-right"]{
-    transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-5%, 0, 0);
 }
 
 [data-anime="to-left"]{
-    transform: translate3d(20px, 0, 0);
+    transform: translate3d(5%, 0, 0);
 }
 
 [data-anime].animate{
