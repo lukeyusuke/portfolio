@@ -63,6 +63,10 @@ body.light{
                         margin-right: .2rem;        
                         height: 30px;
                         width: 125px;
+
+                        @include base-mixins.mobile{
+                            width: 110px;
+                        }
     
                         &::before{
                             content: '';
