@@ -58,12 +58,15 @@ body.light{
             .tabs{
                 .tab-links{
                     margin: 1.5rem 0 2rem 0;
-
                     .tab-btn{
                         border-radius: .5rem 0 .5rem 0;
                         margin-right: .2rem;        
                         height: 30px;
                         width: 125px;
+
+                        @include base-mixins.mobile{
+                            width: 110px;
+                        }
     
                         &::before{
                             content: '';
@@ -99,7 +102,7 @@ body.light{
                             margin: 1rem auto 1.5rem auto;
 
                             @include base-mixins.mobile{
-                                width: 400px;
+                                width: 350px;
                             }
                         }
 

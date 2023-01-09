@@ -58,12 +58,12 @@ body.light{
             }
 
             &-text{
-                width: 450px;
+                width: 480px;
                 margin-bottom: 8rem;
 
                 @include base-mixins.mobile{
                     margin-bottom: 6rem;
-                    width: 400px;
+                    width: 350px;
                 }
             }
 
