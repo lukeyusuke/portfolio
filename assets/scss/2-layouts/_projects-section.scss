@@ -48,12 +48,13 @@ body.light{
             margin: 4rem 0 2rem 0;
             position: relative;
             height: 400px;
-            width: 315px;
+            width: 325px;
 
             img{
                 border-top-left-radius: .5rem;
                 width: 100%;
-                filter: opacity(0.2);
+                height: 40%;
+                filter: opacity(0.8);
             }
 
         }
@@ -96,7 +97,7 @@ body.light{
             &-paragraph{
                 color: variables.$text-project-color;
                 margin-top: 10px;
-                width: 300px;
+                width: 280px;
             }
         }
 
