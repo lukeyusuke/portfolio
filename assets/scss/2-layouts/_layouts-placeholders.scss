@@ -11,3 +11,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+%center-section{
+    display: flex;
+    justify-content: center;
+}
+
+%layout-width{
+    max-width: 1366px;
+    width: 100%;
+}

@@ -15,153 +15,156 @@ body.light{
     }
 }
 
-.about-me{
-    &-container{
-        padding: variables.$section-padding;
-        @extend %flex-model;
-        align-items: flex-start;
+#about-me{
+    @extend %center-section;
+}
 
-        @include base-mixins.mobile{
-            padding: variables.$section-padding 1.5rem;
-            justify-content: center;
-        }
+.about-me-container{
+    padding: variables.$section-padding;
+    align-items: flex-start;
+    @extend %flex-model;
+    @extend %layout-width;
 
-        &-img{
-            img{
-                @extend %img-style;
-                border-radius: 1rem 0;
+    @include base-mixins.mobile{
+        padding: variables.$section-padding 1.5rem;
+        justify-content: center;
+    }
 
-                @include base-mixins.mobile{
-                    border-radius: 1rem;
-                    width: 300px;
-                }
-            }
-        }
-
-        &-content{
-            min-width: 400px;
-            margin-top: 2.5rem;
-            width: 50%;
+    &-img{
+        img{
+            @extend %img-style;
+            border-radius: 1rem 0;
 
             @include base-mixins.mobile{
-                text-align: center;
+                border-radius: 1rem;
+                width: 300px;
             }
+        }
+    }
 
-            .small-line{
-                margin: 0;
+    &-content{
+        min-width: 400px;
+        margin-top: 2.5rem;
+        width: 50%;
 
-                @include base-mixins.mobile{
-                    margin: 0 auto
+        @include base-mixins.mobile{
+            text-align: center;
+        }
+
+        .small-line{
+            margin: 0;
+
+            @include base-mixins.mobile{
+                margin: 0 auto
+            }
+        }
+
+        .tabs{
+            .tab-links{
+                margin: 1.5rem 0 2rem 0;
+                .tab-btn{
+                    border-radius: .5rem 0 .5rem 0;
+                    margin-right: .2rem;        
+                    height: 30px;
+                    width: 125px;
+
+                    @include base-mixins.mobile{
+                        width: 110px;
+                    }
+
+                    &::before{
+                        content: '';
+                        border-radius: .5rem 0 .5rem 0;
+                    }
+                }
+
+                .disabled{
+                    font-weight: variables.$bold-font;
+                    background-color: variables.$dark-gray;
+                }
+
+                .active{
+                    background-color: variables.$light-purple-hover;
+                    color: variables.$light-purple;
+                    font-weight: variables.$bold-font;
                 }
             }
 
-            .tabs{
-                .tab-links{
-                    margin: 1.5rem 0 2rem 0;
-                    .tab-btn{
-                        border-radius: .5rem 0 .5rem 0;
-                        margin-right: .2rem;        
-                        height: 30px;
-                        width: 125px;
+            .tab-content{
+                .tab-content-box{
+                    &-title{
+                        font-size: variables.$h3-size;
+                        color: variables.$light-purple;
+                        
+                        @include base-mixins.mobile{
+                            margin-top: 2.5rem;
+                        }
+                    }
+    
+                    &-text{
+                        animation: up 1s;
+                        margin: 1rem auto 1.5rem auto;
 
                         @include base-mixins.mobile{
-                            width: 110px;
-                        }
-    
-                        &::before{
-                            content: '';
-                            border-radius: .5rem 0 .5rem 0;
+                            width: 350px;
                         }
                     }
 
-                    .disabled{
-                        font-weight: variables.$bold-font;
-                        background-color: variables.$dark-gray;
-                    }
+                    &-languages{
+                        @extend %flex-model;
+                        animation: up 1s;
+                        justify-content: left;
+                        margin: 1.5rem 0 3rem 0;
+                        gap: 1.5rem;
 
-                    .active{
-                        background-color: variables.$light-purple-hover;
-                        color: variables.$light-purple;
-                        font-weight: variables.$bold-font;
-                    }
-                }
-
-                .tab-content{
-                    .tab-content-box{
-                        &-title{
-                            font-size: variables.$h3-size;
-                            color: variables.$light-purple;
-                            
-                            @include base-mixins.mobile{
-                                margin-top: 2.5rem;
-                            }
-                        }
-        
-                        &-text{
-                            animation: up 1s;
-                            margin: 1rem auto 1.5rem auto;
-
-                            @include base-mixins.mobile{
-                                width: 350px;
-                            }
+                        @include base-mixins.mobile{
+                            justify-content: center;
                         }
 
-                        &-languages{
+                        &-style{
+                            border-radius: .5rem 0;
                             @extend %flex-model;
-                            animation: up 1s;
-                            justify-content: left;
-                            margin: 1.5rem 0 3rem 0;
-                            gap: 1.5rem;
-
-                            @include base-mixins.mobile{
-                                justify-content: center;
-                            }
-
-                            &-style{
-                                border-radius: .5rem 0;
-                                @extend %flex-model;
-                                justify-content: center;
-                                height: 65px;
-                                width: 65px;
-                            }
-
-                            #language1{
-                                @include layouts-mixins.div-bg-color(rgba(232, 89, 12, 0.2));
-                            }
-
-                            #language2{
-                                @include layouts-mixins.div-bg-color(rgba(28, 126, 214, 0.2));
-                            }
-
-                            #language3{
-                                @include layouts-mixins.div-bg-color(rgba(207, 100, 154, 20%));
-                            }
-
-                            #language4{
-                                @include layouts-mixins.div-bg-color(rgba(252, 196, 25, 20%));
-                            }
-
-                            #language5{
-                                @include layouts-mixins.div-bg-color(rgba(228, 76, 48, 20%));
-                            }
+                            justify-content: center;
+                            height: 65px;
+                            width: 65px;
                         }
-                    }                   
-                }
-            }
 
-            .btn-cv{
-                border: 1px solid variables.$light-purple;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-                height: 40px;
-                width: 145px;
-    
-                span{
-                    color: variables.$light-purple;
-                }
+                        #language1{
+                            @include layouts-mixins.div-bg-color(rgba(232, 89, 12, 0.2));
+                        }
+
+                        #language2{
+                            @include layouts-mixins.div-bg-color(rgba(28, 126, 214, 0.2));
+                        }
+
+                        #language3{
+                            @include layouts-mixins.div-bg-color(rgba(207, 100, 154, 20%));
+                        }
+
+                        #language4{
+                            @include layouts-mixins.div-bg-color(rgba(252, 196, 25, 20%));
+                        }
+
+                        #language5{
+                            @include layouts-mixins.div-bg-color(rgba(228, 76, 48, 20%));
+                        }
+                    }
+                }                   
+            }
+        }
+
+        .btn-cv{
+            border: 1px solid variables.$light-purple;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            height: 40px;
+            width: 145px;
+
+            span{
+                color: variables.$light-purple;
             }
         }
     }

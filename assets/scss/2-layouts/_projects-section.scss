@@ -23,9 +23,14 @@ body.light{
     }
 }
 
-.projects-container{
+#projects{
+    @extend %center-section;
     background: variables.$light-purple-hover;
+}
+
+.projects-container{
     padding: 125px variables.$section-padding;
+    @extend %layout-width;
 
     @include base-mixins.mobile{
         padding: 125px 1.5rem;

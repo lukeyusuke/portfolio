@@ -3,135 +3,138 @@
 @use '../1-base/base-mixins';
 
 body.light{
-    .footer{
-        .footer-container-icon > .footer-container-icon-box{
-            svg:nth-child(1){
-                display: none;
-            }
-    
-            svg:nth-child(2){
-                display: flex;
-            }
-        }
-    
-        .footer-container-links{
-            span, .links-content{
-                color: variables.$bg-color;
-            }
+    .footer-container-icon > .footer-container-icon-box{
+        svg:nth-child(1){
+            display: none;
         }
 
-        .copyright{
-            p{
-                color: variables.$light-purple;
-                font-weight: bold;
-            }
+        svg:nth-child(2){
+            display: flex;
         }
     }
-}
 
-.footer{
-    &-container{
-        padding: 40px variables.$section-padding 20px variables.$section-padding;
-        @extend %flex-model;
-
-        @include base-mixins.mobile{
-            padding: 50px 1.5rem;
-            flex-direction: column;
-        }
-
-        &-logo{
-            @include base-mixins.mobile{
-                margin-bottom: 2rem;
-            }
-        }
-
-        &-links{
-            @extend %flex-model;
-            width: 60%;
-
-            &-box{
-                padding: 1rem;
-                width: 25%;
-                
-                @include base-mixins.mobile{
-                    width: 100%;
-                    display: block;
-                    padding-bottom: 2.5rem;
-                }
-                
-                span{
-                    color: variables.$text-color;
-                    font-size: .9rem;
-                    margin-bottom: 1rem;
-
-                    @include base-mixins.mobile{
-                        text-align: center;
-                    }
-                }
-
-                .links-content{
-                    @extend %flex-model;
-                    gap: 5px;
-                    margin-bottom: 1rem;
-                    justify-content: left;
-                    font-weight: 500;
-                    width: 200px;
-
-                    @include base-mixins.mobile{
-                        justify-content: center;
-                        width: 100%;
-                    }
-
-                    a:hover{
-                        color: variables.$light-purple;
-                    }
-                }
-            }
-
-        }
-
-        &-icon{
-            @extend %flex-model;
-
-            @include base-mixins.mobile{
-                gap: 2rem;
-            }
-
-            &-box{
-                border-radius: 1rem 0;
-                cursor: pointer;
-                margin-right: 1.5rem;
-                padding: .7rem;
-
-                svg:nth-child(2){
-                    display: none;
-                }
-            }
-
-            &-box:last-child::before{
-                content: 'Voltar ao topo';
-                opacity: 0;
-                transform: translate(-1.25rem , -1rem);
-                transition: .4s;
-                width: 120px;
-            }
-
-            &-box:last-child:hover::before{
-                background: transparent;
-                opacity: 1;
-                transform: translate(-1.25rem ,-2rem);
-                width: 120px;
-            }
+    .footer-container-links{
+        .section-title, .links-content{
+            color: variables.$bg-color;
         }
     }
 
     .copyright{
-        background-color: variables.$light-purple-hover;
-        padding: 1rem;
-        text-align: center;
+        p{
+            color: variables.$light-purple;
+            font-weight: bold;
+        }
+    }
+}
+
+
+#footer{
+    @extend %center-section;
+}
+
+.footer-container{
+    padding: 40px variables.$section-padding 20px variables.$section-padding;
+    @extend %flex-model;
+    @extend %layout-width;
+
+    @include base-mixins.mobile{
+        padding: 50px 1.5rem;
+        flex-direction: column;
+    }
+
+    &-logo{
+        @include base-mixins.mobile{
+            margin-bottom: 2rem;
+        }
+    }
+
+    &-links{
+        @extend %flex-model;
+        width: 60%;
+
+        &-box{
+            padding: 1rem;
+            width: 25%;
+            
+            @include base-mixins.mobile{
+                width: 100%;
+                display: block;
+                padding-bottom: 2.5rem;
+            }
+            
+            span{
+                color: variables.$text-color;
+                font-size: .9rem;
+                margin-bottom: 1rem;
+
+                @include base-mixins.mobile{
+                    text-align: center;
+                }
+            }
+
+            .links-content{
+                @extend %flex-model;
+                gap: 5px;
+                margin-bottom: 1rem;
+                justify-content: left;
+                font-weight: 500;
+                width: 200px;
+
+                @include base-mixins.mobile{
+                    justify-content: center;
+                    width: 100%;
+                }
+
+                a:hover{
+                    color: variables.$light-purple;
+                }
+            }
+        }
+
+    }
+
+    &-icon{
+        @extend %flex-model;
 
         @include base-mixins.mobile{
-            font-size: .9rem;
+            gap: 2rem;
         }
+
+        &-box{
+            border-radius: 1rem 0;
+            cursor: pointer;
+            margin-right: 1.5rem;
+            padding: .7rem;
+
+            svg:nth-child(2){
+                display: none;
+            }
+        }
+
+        &-box:last-child::before{
+            content: 'Voltar ao topo';
+            opacity: 0;
+            transform: translate(-1.25rem , -1rem);
+            transition: .4s;
+            width: 120px;
+        }
+
+        &-box:last-child:hover::before{
+            background: transparent;
+            opacity: 1;
+            transform: translate(-1.25rem ,-2rem);
+            width: 120px;
+        }
+    }
+}
+
+.copyright{
+    display: block;
+    background-color: variables.$light-purple-hover;
+    padding: 1rem;
+    text-align: center;
+
+    @include base-mixins.mobile{
+        font-size: .9rem;
     }
 }
